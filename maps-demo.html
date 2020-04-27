@@ -171,43 +171,8 @@
 
     function getAddress(coordinate, callback){
 
-      // Compose the search API url with the latitude/longitude query
-      var apiRequestUrl = 'https://atlas.microsoft.com/search/address/reverse/json?subscription-key='
-        + azureMapsSubscriptionKey + '&api-version=1.0&query=' + coordinate[1] + ',' + coordinate[0];
-
-      console.log('url', apiRequestUrl);
-
-      // Execute the request
-      httpGet(apiRequestUrl, (data) => {
-        
-        // Log returned json to console
-        console.log('data', data);
-
-        // Parse the returned json
-        var jsonParsed = JSON.parse(data);
-
-        // Find address
-        var address = jsonParsed.addresses && jsonParsed.addresses.length > 0 
-          ? jsonParsed.addresses[0].address.freeformAddress
-          : '(Unknown address)';
-
-        callback(address);
-
-      });
-    }
-
-    function httpGet(url, callback) {
-      // compatible with IE7+, Firefox, Chrome, Opera, Safari
-      var xmlhttp = new XMLHttpRequest();
-
-      xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-          callback(xmlhttp.responseText);
-        }
-      }
-
-      xmlhttp.open("GET", url, true);
-      xmlhttp.send();
+      callback('TODO: get address');
+      
     }
 
   </script>
