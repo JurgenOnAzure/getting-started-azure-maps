@@ -4,7 +4,7 @@
 
 Hi!
 
-Here you'll find the demo code for my Pluralsight course [Getting Started with Azure Maps](https://app.pluralsight.com/library/courses/getting-started-azure-maps).
+Here you'll find the demo code for my Pluralsight course [Getting Started with Azure Maps](https://pluralsight.pxf.io/azure-maps).
 
 The repository contains multiple branches that represent the state of the code at certain moments in the course. You can either clone the repository and switch through the branches using your favorite development environment (like [Visual Studio Code](https://code.visualstudio.com/)) or download the code for each branch individually by using the branch dropdownlist on GitHub.
 
